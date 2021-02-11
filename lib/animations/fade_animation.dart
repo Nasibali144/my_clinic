@@ -31,6 +31,12 @@ class _FadeAnimationState extends State<FadeAnimation> with TickerProviderStateM
   }
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    animation.dispose();
+  }
+  @override
   Widget build(BuildContext context) {
     return FadeTransition(
       opacity: animation,

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:my_clinic/pages/clinic_catalog.dart';
+import 'package:my_clinic/pages/main_page.dart';
 
 class HomePage extends StatefulWidget {
 
@@ -14,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   var _pages = [
-    ClinicCatalog(),
+    MainPage(),
     ClinicCatalog(),
     ClinicCatalog(),
     ClinicCatalog()
@@ -56,19 +57,19 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(FontAwesome.home),
-            title: Text('Home'),
+            label: 'Home'
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesome5.hospital),
-            title: Text('Upload'),
+            icon: Icon(AntDesign.appstore_o),
+            label: 'menu'
           ),
           BottomNavigationBarItem(
             icon: Icon(Entypo.location),
-            title: Text('Search'),
+            label: 'location'
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.person),
-            title: Text('Likes'),
+            label: 'account'
           ),
         ],
       ),

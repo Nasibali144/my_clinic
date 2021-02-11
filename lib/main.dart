@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_clinic/pages/clinic_catalog.dart';
 import 'package:my_clinic/pages/home_page.dart';
 import 'package:my_clinic/pages/hospital_page.dart';
+import 'package:my_clinic/pages/main_page.dart';
 import 'package:my_clinic/pages/splash_page.dart';
 
 void main() {
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         SplashPage.id: (context) => SplashPage(),
         HomePage.id: (context) => HomePage(),
+        MainPage.id: (context) => MainPage(),
         ClinicCatalog.id: (context) => ClinicCatalog(),
         HospitalPage.id: (context) => HospitalPage(),
       },
